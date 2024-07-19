@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on darwin)" generated="20240718 14:12:14.171" rpa="false" schemaversion="3">
+<suite id="s1" name="ASSESSNENT" source="/Users/tony/Downloads/ASSESSNENT">
+<suite id="s1-s1" name="Results" source="/Users/tony/Downloads/ASSESSNENT/results">
+<suite id="s1-s1-s1" name="Testcases" source="/Users/tony/Downloads/ASSESSNENT/results/Testcases">
+<suite id="s1-s1-s1-s1" name="Checkoutpagefieldtest" source="/Users/tony/Downloads/ASSESSNENT/results/Testcases/checkoutpagefieldtest.robot">
+<test id="s1-s1-s1-s1-t1" name="Checkout page field validation" line="12">
+<kw name="Open browser for field Check out page" library="keywords">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240718 14:12:14.258" level="INFO">Opening browser 'Chrome' to base url 'https://woocommerce-850415-2933260.cloudwaysapps.com/product/cap'.</msg>
+<status status="PASS" starttime="20240718 14:12:14.258" endtime="20240718 14:12:15.767"/>
+</kw>
+<status status="PASS" starttime="20240718 14:12:14.258" endtime="20240718 14:12:15.768"/>
+</kw>
+<kw name="Add cart" library="keywords">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="product-21"]/div[3]/form/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240718 14:12:15.768" level="INFO">Clicking button '//*[@id="product-21"]/div[3]/form/button'.</msg>
+<status status="PASS" starttime="20240718 14:12:15.768" endtime="20240718 14:12:16.263"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>/html/body/div[1]/div/main/div/div/div/article/div[1]/div/a</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20240718 14:12:19.260" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.183)
+Stacktrace:
+0   chromedriver                        0x000000010300ea0c chromedriver + 4385292
+1   chromedriver                        0x0000000103007318 chromedriver + 4354840
+2   chromedriver                        0x0000000102c24b0c chromedriver + 281356
+3   chromedriver                        0x0000000102bffaf0 chromedriver + 129776
+4   chromedriver                        0x0000000102c8c314 chromedriver + 705300
+5   chromedriver                        0x0000000102c9f438 chromedriver + 783416
+6   chromedriver                        0x0000000102c5beec chromedriver + 507628
+7   chromedriver                        0x0000000102c5c8c4 chromedriver + 510148
+8   chromedriver                        0x0000000102fd63c8 chromedriver + 4154312
+9   chromedriver                        0x0000000102fdae2c chromedriver + 4173356
+10  chromedriver                        0x0000000102fbbf84 chromedriver + 4046724
+11  chromedriver                        0x0000000102fdb718 chromedriver + 4175640
+12  chromedriver                        0x0000000102faef44 chromedriver + 3993412
+13  chromedriver                        0x0000000102ff91a8 chromedriver + 4297128
+14  chromedriver                        0x0000000102ff9324 chromedriver + 4297508
+15  chromedriver                        0x0000000103006f10 chromedriver + 4353808
+16  libsystem_pthread.dylib             0x000000018c9e1034 _pthread_start + 136
+17  libsystem_pthread.dylib             0x000000018c9dbe3c thread_start + 8
+</msg>
+<msg timestamp="20240718 14:12:19.262" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.183)
+Stacktrace:
+0   chromedriver                        0x000000010300ea0c chromedriver + 4385292
+1   chromedriver                        0x0000000103007318 chromedriver + 4354840
+2   chromedriver                        0x0000000102c24b0c chromedriver + 281356
+3   chromedriver                        0x0000000102bffaf0 chromedriver + 129776
+4   chromedriver                        0x0000000102c8c314 chromedriver + 705300
+5   chromedriver                        0x0000000102c9f438 chromedriver + 783416
+6   chromedriver                        0x0000000102c5beec chromedriver + 507628
+7   chromedriver                        0x0000000102c5c8c4 chromedriver + 510148
+8   chromedriver                        0x0000000102fd63c8 chromedriver + 4154312
+9   chromedriver                        0x0000000102fdae2c chromedriver + 4173356
+10  chromedriver                        0x0000000102fbbf84 chromedriver + 4046724
+11  chromedriver                        0x0000000102fdb718 chromedriver + 4175640
+12  chromedriver                        0x0000000102faef44 chromedriver + 3993412
+13  chromedriver                        0x0000000102ff91a8 chromedriver + 4297128
+14  chromedriver                        0x0000000102ff9324 chromedriver + 4297508
+15  chromedriver                        0x0000000103006f10 chromedriver + 4353808
+16  libsystem_pthread.dylib             0x000000018c9e1034 _pthread_start + 136
+17  libsystem_pthread.dylib             0x000000018c9dbe3c thread_start + 8
+</msg>
+<status status="FAIL" starttime="20240718 14:12:16.263" endtime="20240718 14:12:19.267"/>
+</kw>
+<status status="FAIL" starttime="20240718 14:12:15.768" endtime="20240718 14:12:19.267"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://woocommerce-850415-2933260.cloudwaysapps.com/cart</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20240718 14:12:19.268" endtime="20240718 14:12:19.268"/>
+</kw>
+<status status="FAIL" starttime="20240718 14:12:14.257" endtime="20240718 14:12:19.268">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.183)
+Stacktrace:
+0   chromedriver                        0x000000010300ea0c chromedriver + 4385292
+1   chromedriver                        0x0000000103007318 chromedriver + 4354840
+2   chromedriver                        0x0000000102c24b0c chromedriver + 281356
+3   chromedriver                        0x0000000102bffaf0 chromedriver + 129776
+4   chromedriver                        0x0000000102c8c314 chromedriver + 705300
+5   chromedriver                        0x0000000102c9f438 chromedriver + 783416
+6   chromedriver                        0x0000000102c5beec chromedriver + 507628
+7   chromedriver                        0x0000000102c5c8c4 chromedriver + 510148
+8   chromedriver                        0x0000000102fd63c8 chromedriver + 4154312
+9   chromedriver                        0x0000000102fdae2c chromedriver + 4173356
+10  chromedriver                        0x0000000102fbbf84 chromedriver + 4046724
+11  chromedriver                        0x0000000102fdb718 chromedriver + 4175640
+12  chromedriver                        0x0000000102faef44 chromedriver + 3993412
+13  chromedriver                        0x0000000102ff91a8 chromedriver + 4297128
+14  chromedriver                        0x0000000102ff9324 chromedriver + 4297508
+15  chromedriver                        0x0000000103006f10 chromedriver + 4353808
+16  libsystem_pthread.dylib             0x000000018c9e1034 _pthread_start + 136
+17  libsystem_pthread.dylib             0x000000018c9dbe3c thread_start + 8
+</status>
+</test>
+<status status="FAIL" starttime="20240718 14:12:14.185" endtime="20240718 14:12:19.269"/>
+</suite>
+<status status="FAIL" starttime="20240718 14:12:14.184" endtime="20240718 14:12:19.270"/>
+</suite>
+<status status="FAIL" starttime="20240718 14:12:14.183" endtime="20240718 14:12:19.271"/>
+</suite>
+<status status="FAIL" starttime="20240718 14:12:14.173" endtime="20240718 14:12:19.272"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="ASSESSNENT">ASSESSNENT</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Results">ASSESSNENT.Results</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Testcases">ASSESSNENT.Results.Testcases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1" name="Checkoutpagefieldtest">ASSESSNENT.Results.Testcases.Checkoutpagefieldtest</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240718 14:12:19.260" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.183)
+Stacktrace:
+0   chromedriver                        0x000000010300ea0c chromedriver + 4385292
+1   chromedriver                        0x0000000103007318 chromedriver + 4354840
+2   chromedriver                        0x0000000102c24b0c chromedriver + 281356
+3   chromedriver                        0x0000000102bffaf0 chromedriver + 129776
+4   chromedriver                        0x0000000102c8c314 chromedriver + 705300
+5   chromedriver                        0x0000000102c9f438 chromedriver + 783416
+6   chromedriver                        0x0000000102c5beec chromedriver + 507628
+7   chromedriver                        0x0000000102c5c8c4 chromedriver + 510148
+8   chromedriver                        0x0000000102fd63c8 chromedriver + 4154312
+9   chromedriver                        0x0000000102fdae2c chromedriver + 4173356
+10  chromedriver                        0x0000000102fbbf84 chromedriver + 4046724
+11  chromedriver                        0x0000000102fdb718 chromedriver + 4175640
+12  chromedriver                        0x0000000102faef44 chromedriver + 3993412
+13  chromedriver                        0x0000000102ff91a8 chromedriver + 4297128
+14  chromedriver                        0x0000000102ff9324 chromedriver + 4297508
+15  chromedriver                        0x0000000103006f10 chromedriver + 4353808
+16  libsystem_pthread.dylib             0x000000018c9e1034 _pthread_start + 136
+17  libsystem_pthread.dylib             0x000000018c9dbe3c thread_start + 8
+</msg>
+</errors>
+</robot>
